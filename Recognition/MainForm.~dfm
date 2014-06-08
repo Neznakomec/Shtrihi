@@ -1,0 +1,286 @@
+object MainWindow: TMainWindow
+  Left = 158
+  Top = 150
+  Width = 1031
+  Height = 578
+  Caption = #1056#1072#1089#1087#1086#1079#1085#1072#1074#1072#1085#1080#1077' '#1089#1080#1084#1074#1086#1083#1086#1074
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = False
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object SymbolImage: TImage
+    Left = 624
+    Top = 8
+    Width = 105
+    Height = 105
+    AutoSize = True
+    Visible = False
+  end
+  object OpenButton: TButton
+    Left = 816
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = 'Open'
+    TabOrder = 0
+    Visible = False
+    OnClick = OpenButtonClick
+  end
+  object SaveButton: TButton
+    Left = 104
+    Top = 472
+    Width = 75
+    Height = 25
+    Caption = 'Save'
+    TabOrder = 1
+    Visible = False
+    OnClick = SaveButtonClick
+  end
+  object ScrollBox1: TScrollBox
+    Left = 8
+    Top = 8
+    Width = 529
+    Height = 433
+    TabOrder = 2
+    object Image1: TImage
+      Left = 0
+      Top = 0
+      Width = 105
+      Height = 57
+      AutoSize = True
+    end
+  end
+  object ContourList: TListBox
+    Left = 736
+    Top = 16
+    Width = 265
+    Height = 41
+    ItemHeight = 13
+    TabOrder = 3
+    Visible = False
+    OnClick = ContourListClick
+  end
+  object ProRsoTestButton: TButton
+    Left = 744
+    Top = 384
+    Width = 75
+    Height = 25
+    Caption = 'Classify'
+    TabOrder = 4
+    Visible = False
+    OnClick = ProRsoTestButtonClick
+  end
+  object SaveSymbolButton: TButton
+    Left = 728
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = 'Save'
+    TabOrder = 5
+    Visible = False
+    OnClick = SaveSymbolButtonClick
+  end
+  object ProButton: TButton
+    Left = 560
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Draw Objects'
+    TabOrder = 6
+    Visible = False
+    OnClick = ProButtonClick
+  end
+  object SaveTextButton: TButton
+    Left = 928
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    TabOrder = 7
+    Visible = False
+    OnClick = SaveTextButtonClick
+  end
+  object SegmentButton: TButton
+    Left = 888
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = 'Segment'
+    TabOrder = 8
+    OnClick = SegmentButtonClick
+  end
+  object AnimationButton: TButton
+    Left = 768
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Frames'
+    TabOrder = 9
+    Visible = False
+    OnClick = AnimationButtonClick
+  end
+  object Transform1Button: TButton
+    Left = 328
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Transform1'
+    Enabled = False
+    TabOrder = 10
+    Visible = False
+    OnClick = Transform1ButtonClick
+  end
+  object Transform2Button: TButton
+    Left = 408
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Transform2'
+    Enabled = False
+    TabOrder = 11
+    Visible = False
+    OnClick = Transform2ButtonClick
+  end
+  object BlackButton: TButton
+    Left = 496
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Black'
+    TabOrder = 12
+    Visible = False
+    OnClick = BlackButtonClick
+  end
+  object CustomButton: TButton
+    Left = 744
+    Top = 424
+    Width = 75
+    Height = 25
+    Caption = 'Custom'
+    TabOrder = 13
+    Visible = False
+    OnClick = CustomButtonClick
+  end
+  object RichEdit1: TRichEdit
+    Left = 552
+    Top = 88
+    Width = 457
+    Height = 225
+    ScrollBars = ssBoth
+    TabOrder = 14
+    WordWrap = False
+  end
+  object Memo1: TMemo
+    Left = 944
+    Top = 544
+    Width = 49
+    Height = 17
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 15
+    Visible = False
+  end
+  object MacroButton: TButton
+    Left = 616
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Macro'
+    TabOrder = 16
+    Visible = False
+    OnClick = MacroButtonClick
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 608
+    Top = 352
+    Width = 121
+    Height = 105
+    Caption = 'RadioGroup1'
+    ItemIndex = 0
+    Items.Strings = (
+      #1064'/'#1042
+      #1054#1089#1086#1073#1099#1077' '#1096#1090#1088#1080#1093#1080
+      #1050#1086#1084#1087'.'#1089#1074#1103#1079#1085#1086#1089#1090#1080
+      '%'#1047#1072#1087#1086#1083#1085#1077#1085#1085#1086#1089#1090#1080)
+    TabOrder = 17
+    Visible = False
+  end
+  object RecognButton: TButton
+    Left = 552
+    Top = 16
+    Width = 81
+    Height = 41
+    Caption = #1056#1072#1089#1087#1086#1079#1085#1072#1090#1100
+    TabOrder = 18
+    OnClick = RecognButtonClick
+  end
+  object RotateAngleButton: TButton
+    Left = 296
+    Top = 496
+    Width = 75
+    Height = 25
+    Caption = 'Rotate'
+    TabOrder = 19
+    Visible = False
+  end
+  object RotateAngleText: TEdit
+    Left = 384
+    Top = 496
+    Width = 121
+    Height = 21
+    TabOrder = 20
+    Text = '0'
+    Visible = False
+  end
+  object Button1: TButton
+    Left = 888
+    Top = 416
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 21
+    OnClick = Button1Click
+  end
+  object SavePictureFileDialog: TSavePictureDialog
+    DefaultExt = 'bmp'
+    Filter = 
+      'All (*.jpg;*.jpeg;*.bmp;*.ico;*.emf;*.wmf)|*.bmp;*.jpg;*.jpeg;*.' +
+      'ico;*.emf;*.wmf|Bitmaps (*.bmp)|*.bmp|JPEG Image File (*.jpeg)|*' +
+      '.jpeg|JPEG Image File (*.jpg)|*.jpg|Icons (*.ico)|*.ico|Enhanced' +
+      ' Metafiles (*.emf)|*.emf|Metafiles (*.wmf)|*.wmf'
+    Left = 80
+    Top = 504
+  end
+  object OpenPictureFileDialog: TOpenPictureDialog
+    Left = 48
+    Top = 504
+  end
+  object SaveFileDialog: TSaveDialog
+    DefaultExt = 'csv'
+    Filter = 'CSV(*.csv)|*.csv'
+    Left = 144
+    Top = 512
+  end
+  object MainMenu: TMainMenu
+    Left = 112
+    Top = 512
+    object OpenMenuItem: TMenuItem
+      Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083
+      OnClick = OpenMenuItemClick
+    end
+    object SettingsMenuItem: TMenuItem
+      Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080
+      OnClick = SettingsMenuItemClick
+    end
+    object ExitMenuItem: TMenuItem
+      Caption = #1042#1099#1093#1086#1076
+    end
+  end
+end
